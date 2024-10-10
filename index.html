@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'xs': '300px',
+          'md': '640px',
+          // => @media (min-width: 640px) { ... }
+
+          'xl': '1024px',
+          // => @media (min-width: 1024px) { ... }
+
+          'lg': '1280px',
+          // => @media (min-width: 1280px) { ... }
+        },
+        extend: {
+          inter: 'Inter',
+          colors: {
+            clifford: '#da373d',
+          },
+        }
+      }
+    }
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class=" bg-[#EF803126] font-inter">
+
+    <div class="sticky z-50 top-0 bg-[#FDECE0]">
+
+      <nav class="container mx-auto flex justify-between items-center xl:py-[40px] xs:py-[20px]">
+
+        <div>
+          <img class="xl:w-[210px] xs:w-[138px]" src="./images/nav_icon.png" alt="navbar_icon">
+        </div>
+
+        <ul class="xl:flex xs:hidden  xl:pl-[440px]  gap-6">
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Store</li>
+          <li>Use Cases</li>
+        </ul>
+
+        <button
+          class="xl:block xs:hidden w-[94px] h-[40px] text-[white] bg-[#647B64] text-center rounded py-1">register</button>
+        <i class="fa-solid fa-bars xl:hidden sm:block"></i>
+
+
+      </nav>
+
+    </div>
+
+    <!-- header -->
+    <header class="container mx-auto flex justify-between items-center my-[40px]">
+
+      <div class="flex flex-col justify-center items-start gap-4">
+
+        <h1 class="xl:w-[525px] xs:w-[303px] xl:text-[48px] xs:text-[24px] font-[500]">Lorem ipsum dolor sit amet,
+          consectetur</h1>
+
+        <p class="xl:w-[509px] xs:w-[240px] xl:text-[27px] xs:text-[10px]">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Augue et eros, pellentesque et. Tristique ullamcorper ac pharetra in nisi sit vivamus lorem.
+        </p>
+
+        <button
+          class="xl:w-[350px] xs:w-[224px] xl:text-[16px] xs:text-[10px] bg-[#647B64] xl:py-3 xs:py-2 text-[white] flex justify-between items-end xl:px-4 xs:px-2 rounded-sm	active:bg-[#647B46]"><span
+            class="xl:w-[90px] xs:w-[46px] text-start	">GET STARTET</span><i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+
+      </div>
+
+      <div>
+        <img class="xl:block xs:hidden" src="./images/header_img.png" alt="woman's image">
+      </div>
+
+    </header>
+
+    <!-- amet,consectet -->
+    <div class="container mx-auto flex xl:flex-row xs:flex-col justify-between gap-[60px]">
+
+      <div class="flex flex-col items-start gap-3">
+        <span class="xl:text-[24px] xs:text font-[500] text-[#F3B562]">MOT CONSECTET </span>
+        <h1 class="xl:text-[41px] xs:text-[20px] font-[500] text-[#647B64]">AMET,CONSECTET</h1>
+        <p class="xl:w-[412px] xs:w-[258px] xl:text-[16px] xs:text-[10px] font-[400] text-[#4F4F4F]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+        <button
+          class="xl:w-[350px] xs:w-[224px] xl:text-[16px] xs:text-[10px] bg-[#647B64] xl:py-3 xs:py-2 text-[white] flex justify-between items-end xl:px-4 xs:px-2 rounded-sm	active:bg-[#647B46]"><span
+            class="xl:w-[90px] xs:w-[46px] text-start	">GET STARTET</span><i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+        
+      </div>
+
+      <div class="parent flex flex-wrap w-full xl:gap-[20px] xs:gap-[9px]">
+
+        <div class="child w-[48%] p-[30px] hover:bg-[white] rounded-xl">
+
+          <i class="fa-solid fa-car xl:p-[8px] text-[#333333]"></i>
+          <h1 class="xl:text-[24px] xs:text-[12px] font-[500] text-[#333333]">Car Rental</h1>
+          <p class="xl:text-[16px] xs:text-[8px] xl:w-[221px] xs:w-[90px] text-[#4F4F4F]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+
+        </div>
+
+        <div class="child w-[48%] p-[30px] hover:bg-[white] rounded-xl ">
+
+          <i class="fa-solid fa-ship xl:p-[8px] text-[#333333]"></i>
+          <h1 class="xl:text-[24px] xs:text-[12px] font-[500] text-[#333333]">Boat Cruise</h1>
+          <p class="xl:text-[16px] xs:text-[8px] xl:w-[221px] xs:w-[90px] text-[#4F4F4F]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+
+        </div>
+
+        <div class="child w-[48%] p-[30px] hover:bg-[white] rounded-xl">
+
+          <i class="fa-solid fa-bus xl:p-[8px] text-[#333333]"></i>
+          <h1 class="xl:text-[24px] xs:text-[12px] font-[500] text-[#333333]">Bus Trip</h1>
+          <p class="xl:text-[16px] xs:text-[8px] xl:w-[221px] xs:w-[90px] text-[#4F4F4F]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+
+        </div>
+
+        <div class="child w-[48%] p-[30px] hover:bg-[white] rounded-xl">
+
+          <i class="fa-solid fa-car-on xl:p-[8px] text-[#333333]"></i>
+          <h1 class="xl:text-[24px] xs:text-[12px] font-[500] text-[#333333]">Road Trip</h1>
+          <p class="xl:text-[16px] xs:text-[8px] xl:w-[221px] xs:w-[90px] text-[#4F4F4F]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- amet,consectet iquet  -->
+    <div class="container mx-auto">
+
+      <div class="text-center my-[30px]">
+        <span class="xl:text-[24px] xs:text font-[500] text-[#F3B562]">MOT CONSECTET</span>
+        <h1 class="xl:text-[41px] xs:text-[20px] font-[500] text-[#647B64]">AMET,CONSECTET IQUET </h1>
+      </div>
+
+      <div class="flex justify-between xl:py-[70px] xs:py-[30px]">
+
+        <div class="amet hover:bg-[#647B64] xl:p-8 xs:p-4">
+
+          <i class="amet_icon fa-solid fa-box xl:text-[24px] xs:text-[16px] text-[#647B64] p-4"></i>
+          <h1 class="xl:text-[24px] xs:text-[10px] font-[500]
+          text-[#333333]">MOT consectet</h1>
+          <p class="xl:w-[250px] xs:w-[110px] xl:text-[16px] xs:text-[8px] font-[400]
+          text-[#4F4F4F]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+
+        </div>
+
+        <div class="amet hover:bg-[#647B64] xl:p-8 xs:p-4">
+
+          <i class="amet_icon fa-solid fa-file-invoice-dollar xl:text-[24px] xs:text-[16px] text-[#647B64] p-4"></i>
+          <h1 class="xl:text-[24px] xs:text-[10px] font-[500]
+          text-[#333333]">MOT consectet</h1>
+          <p class="xl:w-[250px] xs:w-[110px] xl:text-[16px] xs:text-[8px] font-[400]
+          text-[#4F4F4F]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+
+        </div>
+
+        <div class="amet hover:bg-[#647B64] xl:p-8 xs:p-4 w-[360px] h-[338px] relative xl:block xs:hidden">
+
+          <i class="amet_icon fa-solid fa-sd-card xl:text-[24px] xs:text-[16px] text-[#647B64] p-4"></i>
+          <h1 class="xl:text-[24px] xs:text-[10px] font-[500]
+          text-[#333333]">MOT consectet</h1>
+          <p class="xl:w-[250px] xs:w-[100px] xl:text-[16px] xs:text-[8px] font-[400]
+          text-[#4F4F4F]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+
+          <div class="absolute w-[463px] h-[182px] bottom-[-90px] right-[-290px]">
+            <img src="./images/gradiend_img.png" alt="color_img">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- MOT consectet -->
+     <div class="container mx-auto flex justify-around items-center my-[40px]">
+
+      <div class="relative bg-[#EF803126] w-[546px] h-[561px] xl:block xs:hidden">
+        <div class="absolute top-[-30px] left-[-50px]">
+          <img class="" src="./images/collective_img.png" alt="peoples' image">
+        </div>
+      </div>
+
+      <div>
+        <div class="flex flex-col items-start gap-3">
+          <span class="xl:text-[24px] xs:text font-[500] text-[#F3B562]">MOT CONSECTET </span>
+          <h1 class="xl:text-[41px] xs:text-[20px] font-[500] text-[#647B64]">AMET,CONSECTET</h1>
+          <p class="xl:w-[412px] xs:w-[258px] xl:text-[16px] xs:text-[10px] font-[400] text-[#4F4F4F]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+          <button
+            class="xl:w-[350px] xs:w-[224px] xl:text-[16px] xs:text-[10px] bg-[#647B64] xl:py-3 xs:py-2 text-[white] flex justify-between items-end xl:px-4 xs:px-2 rounded-sm	active:bg-[#647B46]"><span
+              class="xl:w-[90px] xs:w-[46px] text-start	">GET STARTET</span><i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          
+        </div>
+      </div>
+
+     </div>
+
+     <!-- amet,consectet Sit quis  -->
+
+     <div class="container mx-auto my-[50px]">
+
+      <div class="my-9">
+        <span class="xl:text-[24px] xs:text-[13px] font-[500] text-[#F3B562]">MOT CONSECTET</span>
+        <h1 class="xl:text-[40px] xs:text-[22px] font-[500] text-[#647B64]">AMET,CONSECTET SIT QUES </h1>
+      </div>
+
+      <div class="flex justify-around items-center py-8 xl:flex-row xs:flex-col gap-9">
+
+        <div>
+
+          <div class="flex">
+
+            <div>
+              <img class="xl:w-[158px] xs:w-[100px]" src="./images/blackman_img.png" alt="man's img">
+            </div>
+
+            <div class="xl:w-[99px] xs:w-[90px]">
+              <h1 class="xl:text-[16px] xs:text-[12px] font-[500] text-[#333333]">CTO May & Baker</h1>
+              <p class="xl:text-[13px] xs:text-[10px] font-[400] text-[#4F4F4F]">Tayo Oshinuwa</p>
+            </div>          
+
+          </div>
+        
+            <div class=" xl:w-[350px] xs:w-[200px]">
+              <i class="xl:text-[16px] xs:rext-[12px] font-[400] text0[#4F4F4F] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</i>
+            </div>
+          
+        </div>
+
+        <div>
+
+          <div class="flex">
+
+            <div>
+              <img class="xl:w-[158px] xs:w-[100px]" src="./images/woman's img.png" alt="woman's img">
+            </div>
+
+            <div class="xl:w-[99px] xs:w-[90px]">
+              <h1 class="xl:text-[16px] xs:text-[12px] font-[500] text-[#333333]">CTO May & Baker</h1>
+              <p class="xl:text-[13px] xs:text-[10px] font-[400] text-[#4F4F4F]">Tayo Oshinuwa</p>
+            </div>
+
+          </div>
+          
+          <div class=" xl:w-[350px] xs:w-[200px]">
+            <i class="xl:text-[16px] xs:rext-[12px] font-[400] text0[#4F4F4F] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</i>
+          </div>
+          
+        </div>
+
+        <div>
+
+          <div class="flex">
+
+            <div>
+              <img class="xl:w-[158px] xs:w-[100px]" src="./images/boy's img.png" alt="boy's img">
+            </div>
+
+            <div class="xl:w-[120px] xs:w-[90px]">
+              <h1 class="xl:text-[16px] xs:text-[12px] font-[500] text-[#333333]">CTO May & Baker</h1>
+              <p class="xl:text-[13px] xs:text-[10px] font-[400] text-[#4F4F4F]">Tayo Oshinuwa</p>
+            </div>
+
+          </div>
+          
+          <div class=" xl:w-[350px] xs:w-[200px]">
+            <i class="xl:text-[16px] xs:rext-[12px] font-[400] text0[#4F4F4F] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</i>
+          </div>
+          
+        </div>
+
+      </div>
+
+     </div>
+
+     <!-- footer -->
+
+     <footer class="bg-[#F0DCC5]">
+
+      <div class="container mx-auto flex xl:flex-row xs:flex-col
+      xl:justify-between xs:justify-center gap-[30px]  py-[35px]">
+
+        <div class="flex flex-col items-start gap-4">
+
+          <img src="./images/nav_icon.png" alt="icon">
+  
+          <p class="w-[234px] xl:text-[14px] xs:text-[14px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet</p>
+  
+          <p> Copyright © 2021 AWESOME.</p>
+
+          <div class="flex gap-4">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-web-awesome"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+  
+        </div>
+  
+        <div class="flex xl:gap-[190px] xs:gap-[50px]">
+
+          <div class="flex flex-col gap-2">
+  
+            <h1 class="text-[20px] font-[500] text-[#647B64]">Company</h1>
+            <p>Lorem 1</p>
+            <p>lorem 1</p>
+            <p>lorem 2</p>
+            <p>lorem 3</p>
+            <p>lorem 4</p>
+    
+          </div>
+    
+          <div class="flex flex-col gap-2">
+    
+            <h1 class="text-[20px] font-[500] text-[#647B64]">Support</h1>
+            <p>Lorem 1</p>
+            <p>Lorem2</p>
+            <p>Lorem 3</p>
+            <p>Lorem 4</p>
+            <p>Lorem 5</p>
+    
+          </div>
+
+        </div>
+  
+        <div class="flex flex-col gap-4 items-start">
+  
+          <h1 class="text-[20px] font-[500] text-[#647B64]">SEND MASSAGE</h1>
+          <input class="pt-[10px] pl-[10px] pr-[40px] pb-[70px]" type="text" placeholder="Your Email Address">
+
+          <button
+          class="xl:w-[280px] xs:w-[224px] xl:text-[16px] xs:text-[10px] bg-[#647B64] xl:py-3 xs:py-2 text-[white] flex justify-between items-center xl:px-4 xs:px-2 rounded-sm	active:bg-[#647B46]">
+          <span>SEND Message</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+  
+        </div>
+
+      </div>
+      
+     </footer>
+
+
+  </div>
+
+</body>
+
+</html>

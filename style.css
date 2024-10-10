@@ -1,0 +1,23 @@
+.parent .child:hover i{
+    background-color: #647B64;
+    color:white;
+    border-radius: 4px;
+
+}
+
+
+.amet:hover{
+    border-radius: 4px;
+}
+
+.amet:hover h1{
+    color: white;
+}
+
+.amet:hover p{
+    color: white;
+}
+
+.amet:hover i{
+    color: white;
+}
